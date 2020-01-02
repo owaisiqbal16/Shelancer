@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'auth', pathMatch: 'full' },
+  { path: '', redirectTo: 'auth/step1', pathMatch: 'full' },
   {
     path: 'auth',
     loadChildren: () => import ('./authentication/authentication.module').then( m => m.AuthenticationPageModule)
