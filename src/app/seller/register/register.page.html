@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home" text="" icon="arrow-back" color="dark">
+      </ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>  
+
+<ion-content class="ion-padding">
+  <br><br><br><br><br><br>
+  <ion-text color="dark">
+    <h1>Write a short bio</h1>
+  </ion-text>
+<br>
+  <!-- Textarea in an item with a placeholder -->
+  <ion-item>
+    <ion-textarea  rows="6" cols="20" placeholder="I'm professional in..."></ion-textarea>
+  </ion-item>
+  <br>
+  <ion-text color="dark">
+    <h1>Select Skills</h1>
+  </ion-text>
+
+  <ion-list>
+    <ion-item>
+      <ion-label>Skills</ion-label>
+      <ion-select multiple="true" cancelText="Cancel" okText="OK">
+        <ion-select-option value="iron">Ironing</ion-select-option>
+        <ion-select-option value="cook">Cooking</ion-select-option>
+        <ion-select-option value="clean">Cleaning</ion-select-option>
+        <ion-select-option value="baby">Baby Sitting</ion-select-option>
+        <ion-select-option value="dishes">Washing Dishes</ion-select-option>
+        <ion-select-option value="clothes">Washing Clothes</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+  <br>
+
+  <ion-text color="dark">
+    <p>Suggested categories</p>
+  </ion-text>
+
+  <ion-chip>
+    <ion-label>Cleaning</ion-label>
+    <ion-icon name="close-circle"></ion-icon>
+  </ion-chip>
+  <ion-chip>
+    <ion-label>Washing</ion-label>
+    <ion-icon name="close-circle"></ion-icon>
+  </ion-chip>
+  <ion-chip>
+    <ion-label>Cooking</ion-label>
+    <ion-icon name="close-circle"></ion-icon>
+  </ion-chip>
+
+  <br><br><br><br>
+
+  <ion-button size="large" expand="block" [routerLink]="['/auth/step2']">Continue</ion-button>
+</ion-content>

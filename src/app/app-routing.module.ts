@@ -6,7 +6,12 @@ const routes: Routes = [
   {
     path: 'auth',
     loadChildren: () => import ('./authentication/authentication.module').then( m => m.AuthenticationPageModule)
+  },
+  {
+    path: 'seller',
+    loadChildren: () => import('./seller/seller.module').then( m => m.SellerPageModule)
   }
+
 ];
 
 @NgModule({
