@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { ConfirmedPageRoutingModule } from './confirmed-routing.module';
+import { NavbarPageRoutingModule } from './navbar-routing.module';
 
-import { ConfirmedPage } from './confirmed.page';
+import { NavbarPage } from './navbar.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ConfirmedPageRoutingModule
+    NavbarPageRoutingModule
   ],
-  declarations: [ConfirmedPage]
+  declarations: [NavbarPage]
 })
-export class ConfirmedPageModule {}
+export class NavbarPageModule {}
