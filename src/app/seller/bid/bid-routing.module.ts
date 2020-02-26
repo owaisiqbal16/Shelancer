@@ -15,7 +15,11 @@ const routes: Routes = [
   {
     path: 'accept-offer',
     loadChildren: () => import('./accept-offer/accept-offer.module').then( m => m.AcceptOfferPageModule)
+  },  {
+    path: 'confirmed',
+    loadChildren: () => import('./confirmed/confirmed.module').then( m => m.ConfirmedPageModule)
   }
+
 ];
 
 @NgModule({
