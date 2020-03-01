@@ -30,6 +30,10 @@ const routes: Routes = [
   },  {
     path: 'make-offer',
     loadChildren: () => import('./buyer/make-offer/make-offer.module').then( m => m.MakeOfferPageModule)
+  },
+  {
+    path: 'post-request',
+    loadChildren: () => import('./buyer/post-request/post-request.module').then( m => m.PostRequestPageModule)
   }
 
 
